@@ -48,7 +48,7 @@ export default function UserList() {
             </div>
 
             <button onClick={fetchData} className="load-more">
-                Load more
+                Load more!
             </button>
         </div>
     );
