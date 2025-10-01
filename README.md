@@ -42,7 +42,7 @@ Optimizes the build for the best performance.
 ## Lab Questions
 
 **How many hours did it take you to complete this assignment?**  
-6 hours
+7 hours
 
 **Were there any parts of the lab you found challenging?**  
 Yes, the main challenges were implementing Dark Mode properly with smooth transitions and ensuring the cards and buttons adapt nicely to the dark theme.
