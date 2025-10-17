@@ -1,0 +1,71 @@
+/* ==== Liked Users Page ==== */
+
+.liked-page {
+    text-align: center;
+    padding: 40px;
+}
+
+.liked-page h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.user-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.user-card button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.user-card button:hover {
+    background-color: #b02a37;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: transparent;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(37, 99, 235, 0.1);
+}
+
+.back-link:hover {
+    background-color: var(--primary);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.25);
+}
+
+/* ✨ يمكنك إضافة أيقونة سهم للخلف (اختياري) */
+.back-link::before {
+    content: "←";
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.back-link:hover::before {
+    transform: translateX(-4px);
+}

@@ -1,0 +1,477 @@
+/* ===================== */
+/* 🎨 ألوان رئيسية */
+:root {
+    --primary: #2563eb;
+    /* أزرق جميل */
+    --danger: #dc3545;
+    /* أحمر */
+    --bg-light: #fafafa;
+    /* خلفية فاتحة */
+    --text-dark: #222;
+    /* نص داكن */
+}
+
+/* ===================== */
+/* ===== Body & Layout ===== */
+body {
+    font-family: "Outfit", sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: var(--bg-light);
+    color: var(--text-dark);
+}
+
+main.container {
+    flex: 1;
+    padding: 40px 60px;
+}
+
+/* ===================== */
+/* ===== Navbar ===== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: var(--primary);
+    color: white;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+}
+
+.nav-links a.active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* ===== Theme Toggle Button ===== */
+.theme-toggle {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.theme-toggle:hover {
+    background-color: #666;
+}
+
+/* ===================== */
+/* ===== Footer ===== */
+footer.footer {
+    text-align: center;
+    padding: 20px;
+    background: #f2f2f2;
+    color: #555;
+    font-size: 0.9rem;
+    width: 100%;
+    margin-top: auto;
+}
+
+/* ===================== */
+/* ===== Team Page ===== */
+.team-page {
+    text-align: center;
+}
+
+.team-page h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.controls {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.controls input {
+    width: 70px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.controls button {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.controls button:hover {
+    background-color: #1d4ed8;
+}
+
+/* ===== User Cards ===== */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.user-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.user-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.user-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.user-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.user-card button,
+.user-card a {
+    display: inline-block;
+    margin: 5px 5px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.user-card button {
+    background-color: var(--danger);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.user-card button:hover {
+    background-color: #b02a37;
+}
+
+.user-card a {
+    background-color: var(--primary);
+    color: white;
+}
+
+.user-card a:hover {
+    background-color: #1d4ed8;
+}
+
+/* ===================== */
+/* ===== Liked Users Page ===== */
+.liked-page {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.liked-page h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* ===== Team Grid (بطاقات المستخدمين) ===== */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.user-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.user-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.user-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.user-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+}
+
+.user-card button {
+    background-color: var(--danger);
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.user-card button:hover {
+    background-color: #b02a37;
+}
+
+/* ===== Back Link Button ===== */
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: transparent;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    box-shadow: 0 2px 6px rgba(37, 99, 235, 0.1);
+}
+
+.back-link:hover {
+    background-color: var(--primary);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.25);
+}
+
+.back-link::before {
+    content: "←";
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.back-link:hover::before {
+    transform: translateX(-4px);
+}
+
+/* ===== Dark Mode ===== */
+body.dark .liked-page {
+    color: #f2f2f2;
+}
+
+body.dark .user-card {
+    background-color: #1f1f1f;
+    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.05);
+}
+
+body.dark .user-card button {
+    background-color: #dc3545;
+}
+
+body.dark .user-card button:hover {
+    background-color: #b02a37;
+}
+
+body.dark .back-link {
+    color: #ffcc00;
+    border-color: #ffcc00;
+}
+
+body.dark .back-link:hover {
+    background-color: #ffcc00;
+    color: #121212;
+}
+
+
+/* ===== Back Link Button ===== */
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: transparent;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    box-shadow: 0 2px 6px rgba(37, 99, 235, 0.1);
+}
+
+.back-link::before {
+    content: "←";
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.back-link:hover {
+    background-color: var(--primary);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.25);
+}
+
+.back-link:hover::before {
+    transform: translateX(-4px);
+}
+
+/* ===================== */
+/* ===== Dark Mode ===== */
+body.dark {
+    background-color: #121212;
+    color: #f2f2f2;
+}
+
+body.dark .navbar {
+    background-color: #1f1f1f;
+}
+
+body.dark .navbar a {
+    color: #ccc;
+}
+
+body.dark .navbar a.active {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+body.dark .theme-toggle {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark .theme-toggle:hover {
+    background-color: #555;
+}
+
+body.dark .user-card {
+    background-color: #1f1f1f;
+    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.05);
+}
+
+body.dark footer.footer {
+    background: #1a1a1a;
+    color: #aaa;
+}
+
+body.dark .back-link {
+    color: #ffcc00;
+    border-color: #ffcc00;
+}
+
+body.dark .back-link:hover {
+    background-color: #ffcc00;
+    color: #121212;
+}
+
+/* ===================== */
+/* ===== Team Details ===== */
+.details {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.details:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.details img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.details h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.details p {
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+/* ===== Back Button ===== */
+.details button {
+    margin-top: 20px;
+    padding: 8px 16px;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.details button:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+/* ===== Dark Mode ===== */
+body.dark .details {
+    background-color: #1f1f1f;
+    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.05);
+}
+
+body.dark .details button {
+    background-color: #2563eb;
+}
+
+body.dark .details button:hover {
+    background-color: #1d4ed8;
+}
