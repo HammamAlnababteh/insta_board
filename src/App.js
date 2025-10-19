@@ -8,6 +8,7 @@ import TeamDetails from './components/TeamDetails/TeamDetails'
 import LikedUsers from './components/LikedUsers'
 import NotFound from './pages/NotFound'
 import './styles/general.css';
+import './index.css'
 
 
 const App = () => {

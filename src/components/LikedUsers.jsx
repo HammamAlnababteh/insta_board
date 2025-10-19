@@ -16,7 +16,7 @@ const LikedUsers = () => {
     };
 
     return (
-        <div className="liked-page">
+        <div className="liked-page" style={{ height: "100vh" }}>
             <h2>❤️ Liked Users</h2>
             {likedUsers.length === 0 ? (
                 <>

@@ -9,7 +9,7 @@ const TeamDetails = () => {
     if (!user) return <p>User data not found.</p>;
 
     return (
-        <div className="details">
+        <div className="details" >
             <img src={user.picture.large} alt="User" />
             <h2>{user.name.first} {user.name.last}</h2>
             <p><strong>Email:</strong> {user.email}</p>
